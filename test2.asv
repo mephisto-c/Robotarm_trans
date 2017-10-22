@@ -16,14 +16,13 @@
 
 %%
 %my robotarm
-close all
-clear all
+clear
 clc
-L1 = Link('alpha',-pi/2 , 'a',56 , 'd',45);
-L2 = Link('alpha',0 , 'a',108 ,'d',0);
-L3 = Link('alpha',pi/2 , 'a',-22 ,'d',0);
-L4 = Link('alpha',pi/2 , 'a',0,'d',158);
-L5 = Link('alpha',pi/2 , 'a',52,'d',0);
-robot=SerialLink([L1,L2,L3,L4,L5]);
-init_ang=[0 -pi/2 pi 0 0];
+L1 = Link('alpha',0 , 'a',0 , 'd',0);
+L2 = Link('alpha',0 , 'a',45 ,'d',0);
+L3 = Link('alpha',0 , 'a',108 ,'d',0);
+% L4 = Link('alpha',-pi/2 , 'a',22 ,'d',-12);
+% L5 = Link('alpha',pi/2 , 'a',0 ,'d',0);
+robot=SerialLink([L1,L2]);
+init_ang=[0 0];
 robot.teach(init_ang);

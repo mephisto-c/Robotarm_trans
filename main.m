@@ -15,7 +15,7 @@ L4 = Link('d',0.01, 'a',0.073 , 'alpha',0);
 robot=SerialLink([L1,L2,L3,L4]);
 %robot_arm_Init(scom);
 %init_ang = [0 0 0 pi/2];%末端向下
-A5 = [0,-1,0,0;0,0,1,0;-1,0,0,0;0,0,0,1];
+
 %%
 %以下为轨迹程序
 

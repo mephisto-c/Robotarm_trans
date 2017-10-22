@@ -8,7 +8,7 @@ L5 = Link('d',0 , 'a',0.066, 'alpha', pi/2);
 robot1=SerialLink([L1,L2,L3,L4,L5]);
 %theta=[0,0,0,0,0];
 
-init_ang=[0 0 0 pi/2,0];%末端向下
+init_ang=[0 0 0 pi/2 0];%末端向下
 p1=robot1.fkine(init_ang);
 robot1.plot(init_ang);
 %%
